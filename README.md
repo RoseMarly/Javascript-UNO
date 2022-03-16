@@ -45,7 +45,7 @@ __Meta : Commencer à penser à la gestion du projet et à la répartition des t
 Faire un schéma papier plus tard
 
 ## Description du Minimum Viable Product
--Deck de cartes
--Le code reconnait quel carte peut être jouée ou non
--Visuel de base
--Plusieurs joueurs, tours
+- Deck de cartes
+- Le code reconnait quel carte peut être jouée ou non
+- Visuel de base
+- Plusieurs joueurs, tours
