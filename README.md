@@ -3,6 +3,11 @@
 ## Descriptif du projet
 Reproduction d'un jeu de UNO, de 2 à 4 joueurs, avec une implémentation de serveurs/groupes à rejoindre, et potentiellement de règles à choix
 
+__Cartes du jeu__
+- 4 couleurs
+- 0 à 9
+- Reverse, +2, Stop, + 4 et Change-Couleurs (Noir)
+
 ## Liste des collaborateurs du projet
 * Nadia Aden
 * Rose Marly
@@ -39,28 +44,8 @@ __Meta : Commencer à penser à la gestion du projet et à la répartition des t
 ## Concept UI/UX, wireframes
 Faire un schéma papier plus tard
 
-## Description du MVP
-??
-
-
-
-
-
-
-
-## Étapes
-* Jeu en lui-même (deck, distribution des cartes)
-* Connection, serveurs et groupes
-* Interface utilisable (Pour la création et pour le jeu)
-* Aspects visuels
-
-### Cartes du jeu
-- 4 couleurs
-- 0 à 9
-- Reverse, +2, Stop, + 4 et Change-Couleurs (Noir)
-
-### Features
-- Bouton pour passer son tour et piocher 
-- Boutons UNO et Contre-UNO
-- 2 à 10 joueurs
-- Règles à choix ?
+## Description du Minimum Viable Product
+-Deck de cartes
+-Le code reconnait quel carte peut être jouée ou non
+-Visuel de base
+-Plusieurs joueurs, tours
