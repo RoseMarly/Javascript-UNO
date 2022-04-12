@@ -39,18 +39,28 @@ let discard = [] //défausse, se remplira au fil de la partie
 
 let turn = 0     //pour suivre chaque tour du jeu, turn++ après chaque carte jouée, puis turn%joueurs pour suivre l'ordre de jeu
 
-//return une carte piochée et enlevée du deck
-function draw(){ 
+//return n cartes piochées et enlevées du deck
+function draw(n){ 
+  let drawedCards = []
 
-// pour plus tard: ajouter ici une condition de vérification que le deck est rempli, et le reformer si il était vide
-// en reprenant la table "discard" 
-  
-let rng = Math.floor((Math.random() * deck.length))
-let DrawedCard = deck[rng] //stock la valeur de la carte
-deck.splice(rng, 1) //retire la carte du deck
-return DrawedCard
+
+  for(i = 0; i < n; i++){
+    if(!deck.length){recycleDiscard()} //si deck.length != 1 ou plus (donc si = 0, --> correspond à false)
+    
+    let rng = Math.floor((Math.random() * deck.length))
+    drawedCards.push(deck[rng]) //stock la valeur de la carte
+    deck.splice(rng, 1) //retire la carte du deck
+  }
+  return drawedCards
 }
 
+function recycleDiscard(){
+  deck = [...discard] //copier la discard dans le deck
+  deck.slice(deck.length, 1) //retirer la dernière carte, qui reste dans la discard
+
+  let lastDiscard = discard[discard.length] //sauvegarder la dernière carte
+  discard = [lastDiscard] // vider la discard
+}
 
 function setup(players, cards){
   for(i = 0; i < players; i++){
