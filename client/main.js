@@ -81,5 +81,8 @@ discard.push()
 
 let BoutonUno = document.getElementById("btnUNO")
 BoutonUno.addEventListener("click",function dernierCarte(){
-  alert("UNO !!")
-})
+  if (playerHand == 1){
+    BoutonUno.addEventListener("click",function dernierCarte(){
+      alert("UNO !!")
+    })
+  }})
