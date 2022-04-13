@@ -56,7 +56,7 @@ function draw(n){
 
 function recycleDiscard(){
   deck = [...discard] //copier la discard dans le deck
-  deck.slice(deck.length, 1) //retirer la dernière carte, qui reste dans la discard
+  deck.splice(deck.length, 1) //retirer la dernière carte, qui reste dans la discard
 
   let lastDiscard = discard[discard.length] //sauvegarder la dernière carte
   discard = [lastDiscard] // vider la discard
@@ -78,3 +78,8 @@ function play(player, card){
 
 discard.push()
 }
+
+let BoutonUno = document.getElementById("btnUNO")
+BoutonUno.addEventListener("click",function dernierCarte(){
+  alert("UNO !!")
+})
