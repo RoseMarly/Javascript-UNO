@@ -3,10 +3,11 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>UNO</h1>
 
-  {{> hello}}
-  {{> info}}
+  {{> discard}}
+  {{> hand}}
+  <br>
   <button id="btnUNO">UNO</button>
 </body>
 
@@ -23,4 +24,12 @@
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul>
+</template>
+
+<template name="discard">
+  <div>discard</div>
+</template>
+
+<template name="hand">
+  <dive>hand</dive>
 </template>

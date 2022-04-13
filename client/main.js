@@ -43,7 +43,6 @@ let turn = 0     //pour suivre chaque tour du jeu, turn++ après chaque carte jo
 function draw(n){ 
   let drawedCards = []
 
-
   for(i = 0; i < n; i++){
     if(!deck.length){recycleDiscard()} //si deck.length != 1 ou plus (donc si = 0, --> correspond à false)
     
