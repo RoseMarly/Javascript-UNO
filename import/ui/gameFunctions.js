@@ -29,11 +29,11 @@ function setup(){
 //player: joueur qui essaie de jouer, pour vérifier si il peut jouer
 // card: la carte qu'il essaie de jouer
 function play(playedCard){
-    let dicardColor = discard[discard.length].charAT(0); //la carte la + au dessus, pas sur que ça soit Dicard[0]
-    let dicardNumber = discard[discard.length].charAT(1);
+    let dicardColor = discard[discard.length].charAT(0); //la carte la + au dessus
+    let dicardNumber = discard[discard.length].charAT(1); //changer pour que ca lise les characters 2 et 3
     //verifier qui doit jouer
             let playedCardColor = playedCard.charAT(0); //couleur de la carte jouée
-            let playedCardNumber = playedCard.charAT(1); //numéro de la carte jouée
+            let playedCardNumber = playedCard.charAT(1); //changer pour que ca lise les characters 2 et 3
             if (discardColor === playedCardColor || discardNumber === playedCardNumber){
                 console.log("la carte est placée");
                 discard.push(playedCard); //ajoute à la defausse la carte jouée
