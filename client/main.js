@@ -18,8 +18,3 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
-
-//1er cractère: couleur
-//2ème caractère: valeur
-//à changer: en faire une collection (base de données)
-// (permettra de décider qu'est ce qui est accessible ou non à qui)
