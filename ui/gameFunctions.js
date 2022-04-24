@@ -21,7 +21,7 @@ function recycleDiscard(){
     deck.splice(deck.length, 1) //retirer la dernière carte, qui reste dans la discard
 
     let lastDiscard = discard[discard.length] //sauvegarder la dernière carte
-    discard = [lastDiscard] // vider la discard
+    discard = [lastDiscard] // vider la discard A REVOIR PLUS TARD pour changer la base de données, vu que discard en fait partie
 }
 
 function setup(){
