@@ -1,5 +1,3 @@
-let discard = [] //défausse, se remplira au fil de la partie
-
 let turn = 0     //pour suivre chaque tour du jeu, turn++ après chaque carte jouée, puis turn%joueurs pour suivre l'ordre de jeu
 //peut-être inutile au final, selon comment on gère la collection et les permissions jsp
 

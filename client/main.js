@@ -36,6 +36,7 @@ let data = {
     "J0", "J1", "J2", "J3", "J4", "J5", "J6", "J7", "J8", "J9", "JS", "JB", "J+2",
     "NC", "NC", "N+4", "N+4"
     ],
+  "discard": [],
   "players": [
     {
       "id": "uihdoi87g1b3u2i",
