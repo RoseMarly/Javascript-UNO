@@ -37,7 +37,7 @@ function play(playedCard){
             if (discardColor === playedCardColor || discardNumber === playedCardNumber){
                 console.log("la carte est placée");
                 discard.push(playedCard); //ajoute à la defausse la carte jouée
-                players.hand.splice(playedCard) //retire de la main la carte jouée
+                players.hand.splice(playedCard) //retire de la main la carte jouée, pas sure que ça marche comme ça
             }
             // else if pour les cartes spéciales
             else {
