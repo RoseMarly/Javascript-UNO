@@ -1,4 +1,20 @@
+h1 {
+  text-align: center;
+}
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-color: gray;
+}
+
+button{
+  background-color: red;
+  border: 1cm;
+  border-radius: 50%;
+  padding: 20px;
+}
+#milieuDeJeu{
+  text-align: center;
+  margin: auto;
+  display: block;
 }

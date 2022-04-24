@@ -1,5 +1,5 @@
 <head>
-  <title>Javascript-UNO</title>
+  <title>UNO</title>
 </head>
 
 <body>
@@ -9,25 +9,14 @@
   <br>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
-
 <template name="game">  <!-- incluera les mains et leurs cartes, les deux boutons et la pioche/défausse-->
-  <button id="btnUNO">UNO</button>
-  <button id="btnContre">Contre-UNO</button>
-  <button id="pioche">Pioche</button>
+  <div id="milieuDeJeu"> <!-- div contenant: boutons + pioche + défausse -->
+    <div></div> <!-- rajouter ici pioche + défausse -->
+    <br>
+    <button id="btnUNO">UNO</button>
+    <button id="pioche">Pioche</button>
+    <button id="btnContre">Contre</button>
+  </div>
   <!-- {{#each player}} (cassé pour l'instant) insérer une div (leur main) par joueur, puis mettre n fois le template card dedans -->
   <!-- <div>{{#each card}}</div> mis en commentaire temporairement, pour pouvoir lancer le code si besoin-->
 </template>
