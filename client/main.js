@@ -22,7 +22,7 @@ Template.hello.events({
 
 //1er cractère: couleur
 //2ème caractère: valeur
-//à changer: sous forme d'objet (voir ci-dessous) + en faire une collection (base de données)
+//à changer: en faire une collection (base de données)
 // (permettra de décider qu'est ce qui est accessible ou non à qui)
 let data = {
   "deck": [
