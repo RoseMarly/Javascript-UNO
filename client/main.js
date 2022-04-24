@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-import 'ui/gameFunctions.js'; //FONCTIONS: à importer du fichier gameFunctions.js
+import '../import/ui/gameFunctions.js'; //FONCTIONS: à importer du fichier gameFunctions.js
 import './main.html';
 
 Template.hello.onCreated(function helloOnCreated() {
@@ -9,7 +9,7 @@ Template.hello.onCreated(function helloOnCreated() {
 });
 
 Template.game.helpers({
-  players
+  //players
 });
 
 Template.hello.events({
@@ -23,12 +23,3 @@ Template.hello.events({
 //2ème caractère: valeur
 //à changer: en faire une collection (base de données)
 // (permettra de décider qu'est ce qui est accessible ou non à qui)
-
-
-let BoutonUno = document.getElementById("btnUNO")
-BoutonUno.addEventListener("click",function dernierCarte(){
-  if (playerHand == 1){
-    BoutonUno.addEventListener("click",function dernierCarte(){ //implémenter l'interactivité par template
-      alert("UNO !!")
-    })
-  }})
