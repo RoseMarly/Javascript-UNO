@@ -31,4 +31,5 @@ function setup(){
 function play(player, card){
     discard.push()
     tour++  // faire en sorte de changer le booléen "isTurn" de la BDD pour passer au joueur suivant
+            // peut-être en faire une fonction séparée ? pour mieux gérer les changements de sens et passement de tour
 }
