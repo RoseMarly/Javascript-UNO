@@ -1,6 +1,5 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-hello
 import 'ui/gameFunctions.js'; //FONCTIONS: à importer du fichier gameFunctions.js
 import './main.html';
 
