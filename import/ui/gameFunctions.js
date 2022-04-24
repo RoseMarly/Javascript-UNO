@@ -1,6 +1,3 @@
-let turn = 0     //pour suivre chaque tour du jeu, turn++ après chaque carte jouée, puis turn%joueurs pour suivre l'ordre de jeu
-//peut-être inutile au final, selon comment on gère la collection et les permissions jsp
-
 //return n cartes piochées et enlevées du deck
 function draw(n){ 
     let drawedCards = []
@@ -15,7 +12,6 @@ function draw(n){
     return drawedCards
 }
 
-console.log(draw(1))
 function recycleDiscard(){
     deck = [...discard] //copier la discard dans le deck
     deck.splice(deck.length, 1) //retirer la dernière carte, qui reste dans la discard
@@ -34,5 +30,5 @@ function setup(){
 // card: la carte qu'il essaie de jouer
 function play(player, card){
     discard.push()
-    tour++
+    tour++  // faire en sorte de changer le booléen "isTurn" de la BDD pour passer au joueur suivant
 }

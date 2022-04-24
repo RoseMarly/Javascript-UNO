@@ -20,18 +20,22 @@ let data = {
       {
         "id": "uihdoi87g1b3u2i",
         "hand": [],
+        "isTurn": false,
       },
       {
         "id": "oh312983h9813h2",
         "hand": [],
+        "isTurn": false,
       },
       {
         "id": "983h1293h12983h",
         "hand": [],
+        "isTurn": false,
       },
       {
         "id": "eh129e8h12ehkeq",
         "hand": [],
+        "isTurn": false,
       },
     ]
   }
