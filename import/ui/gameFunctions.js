@@ -38,7 +38,8 @@ function play(playedCard){
                 console.log("la carte est placée");
                 discard.push(playedCard); //ajoute à la defausse la carte jouée
                 players.hand.splice(playedCard) //retire de la main la carte jouée, pas sure que ça marche comme ça
-            }
+                // mettre un truc comme cardCollection.players[?].hand.remove(this._id) dans le click sur une carte, pour la retirer de la main
+            }   
             // else if pour les cartes spéciales
             else {
                 console.log("les cartes de corréspondent pas")
