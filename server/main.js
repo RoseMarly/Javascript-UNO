@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { cardCollection } from '/import/api/cardCollection';
+import { cardCollection } from '/import/api/card-collection';
 
 Meteor.startup(() => {
   cardCollection.remove({}) //tout vider
