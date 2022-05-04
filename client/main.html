@@ -16,6 +16,16 @@
     <button id="btnUNO">UNO</button>
     <button id="pioche">Pioche</button>
     <button id="btnContre">Contre</button>
+    <ul>
+      {{#each tasks}}
+          {{> task}}
+      {{/each}}
+      <div class="computer-deck deck"></div>
+      <div class="computer-card-slot card-slot"></div>
+      <div class="text"></div>
+      <div class="player-deck deck"></div>
+      <div class="player-card-slot card-slot"></div>
+  </ul>
   </div>
   <!-- {{#each player}} (cassé pour l'instant) insérer une div (leur main) par joueur, puis mettre n fois le template card dedans -->
   <!-- <div>{{#each card}}</div> mis en commentaire temporairement, pour pouvoir lancer le code si besoin-->
