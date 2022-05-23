@@ -1,0 +1,21 @@
+<body>
+    {{> mainContainer }}
+</body>
+
+<template name="mainContainer">
+    <div class="container">
+        <header>
+            <h1>Joueurs</h1>
+        </header>
+
+        <ul>
+            {{#each tasks}}
+                {{> task}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="Joueurs">
+    <li>{{text}}</li>
+</template>
