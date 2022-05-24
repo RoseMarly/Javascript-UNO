@@ -1,7 +1,9 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-import '../import/ui/game-functions'; //FONCTIONS: à importer du fichier gameFunctions.js
+import { draw, recycleDiscard, setup, play } from '../import/ui/game-functions'; //FONCTIONS importées du fichier gameFunctions.js
+
 import './main.html';
+
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
