@@ -8,10 +8,11 @@ body {
 }
 
 button{
-  background-color: red;
+  background-color: rgb(211, 211, 211);
   border: 1cm;
-  border-radius: 50%;
+  border-radius: 10%;
   padding: 20px;
+  font-size: 120%;
 }
 #milieuDeJeu{
   text-align: center;

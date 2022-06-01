@@ -3,7 +3,8 @@
 </head>
 
 <body>
-  <h1>UNO</h1>
+  <h1>Bienvenue au UNO en ligne</h1>
+  {{> home}}
   {{> game}}
   <!-- à rajouter ensuite: le chat-->
   <br>
@@ -34,3 +35,11 @@
 <template name="card">
 
 </template>
+
+<template name = "home">
+  <div id="milieuDeJeu">
+    <button id="login">Login</button>
+    <button id="plateau">Plateau</button>
+  </div>
+</template>
+
