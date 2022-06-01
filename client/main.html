@@ -5,41 +5,14 @@
 <body>
   <h1>Bienvenue au UNO en ligne</h1>
   {{> home}}
-  {{> game}}
   <!-- à rajouter ensuite: le chat-->
   <br>
 </body>
 
-<template name="game">  <!-- incluera les mains et leurs cartes, les deux boutons et la pioche/défausse-->
-  <div id="milieuDeJeu"> <!-- div contenant: boutons + pioche + défausse -->
-    <div></div> <!-- rajouter ici pioche + défausse -->
-    <br>
-    <button id="btnUNO">UNO</button>
-    <button id="pioche">Pioche</button>
-    <button id="btnContre">Contre</button>
-    <ul>
-      {{#each tasks}}
-          {{> task}}
-      {{/each}}
-      <div class="computer-deck deck"></div>
-      <div class="computer-card-slot card-slot"></div>
-      <div class="text"></div>
-      <div class="player-deck deck"></div>
-      <div class="player-card-slot card-slot"></div>
-  </ul>
-  </div>
-  <!-- {{#each player}} (cassé pour l'instant) insérer une div (leur main) par joueur, puis mettre n fois le template card dedans -->
-  <!-- <div>{{#each card}}</div> mis en commentaire temporairement, pour pouvoir lancer le code si besoin-->
-</template>
-
-<template name="card">
-
-</template>
 
 <template name = "home">
   <div id="milieuDeJeu">
     <button id="login">Login</button>
-    <button id="Game">Game</button>
   </div>
 </template>
 
